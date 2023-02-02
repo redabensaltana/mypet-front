@@ -1,0 +1,29 @@
+<div class="card-container">
+  <div class="card" *ngFor="let post of posts">
+    <div>
+      <img
+        class="img"
+        src="https://sites.google.com/site/lowqualpicturesofcatswithhats/_/rsrc/1412189537924/home/Hats-for-Cats5-glitched-a0-s0-i1-q1.png"
+        width="200"
+        height="180"
+      />
+      <h5>description : {{ post.description }}</h5>
+    </div>
+    <div>
+      <h3>{{ post.title }}</h3>
+      <h5>Price : {{ post.price }} MAD</h5>
+      <h5>City : {{ post.city }}</h5>
+      <h5>Type : {{ post.type }}</h5>
+      <h5>Duration : {{ post.duration }} j</h5>
+      <h5>Age : {{ post.age }}</h5>
+      <button
+        class="adopt-button"
+        *ngIf="post.status == 0"
+        (click)="adopt(post.id)"
+      >
+        adopt
+      </button>
+      <h5 *ngIf="post.status != 0">status : adopted</h5>
+    </div>
+  </div>
+</div>

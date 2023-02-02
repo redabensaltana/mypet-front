@@ -1,0 +1,15 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<div class="box">
+<h1>LOGIN</h1>
+
+<input type="email" formControlName="email" placeholder="email" class="email" required/>
+  
+<input type="password" formControlName="password" placeholder="*************" class="password" required/>
+  
+<button class="btn" [disabled]="!loginForm.valid">submit</button>
+  
+</div> 
+  
+</form>

@@ -1,0 +1,19 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+<div class="box">
+<h1>REGISTER</h1>
+
+<input type="email" formControlName="email" placeholder="email" class="email" required/>
+  
+<input type="password" formControlName="password" placeholder="*************" class="password" required/>
+
+<input type="text" formControlName="address" placeholder="address" class="email" required/>
+
+<input type="text" formControlName="username" placeholder="username" class="email" required/>
+
+<input type="tel" formControlName="numberPhone" placeholder="numberPhone" class="email" required/>
+
+<button class="btn" [disabled]="!registerForm.valid">submit</button>
+
+</div> 

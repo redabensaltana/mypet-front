@@ -1,0 +1,10 @@
+.logout-button {
+    background-color: rgb(162, 52, 52); /* Change this to the desired background color */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; /* Change this to the desired text color */
+    padding: 10px 20px; /* Adjust the padding as desired */
+    border-radius: 5px; /* Adjust the border radius as desired */
+    text-decoration: none; /* Remove the underline from the link */
+    margin-left: 10px; /* Add some margin as desired */
+    border: 0;
+}
